@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meme Menu V. 1</title>
-    <link rel="shortcut icon" href="assets/favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
     <script src="js/jquery.js"></script>
@@ -32,7 +31,7 @@
                     <iframe src=""></iframe>
                     <div class="onhover" onmouseover="hover()" onclick="zip()"></div>
                     <span class="tag">Senate Channel</span></div>
-                <div class="ch occupied" data-id="skin-repo">
+                <div class="ch occupied" data-id="skin-repo" data-href="skin-repo/index.html">
                     <iframe src=""></iframe>
                     <div class="onhover" onmouseover="hover()" onclick="zip()"></div>
                     <span class="tag">Face Channel</span></div>
@@ -100,17 +99,16 @@
     </div>
 
 <div class="msgboard">
+
     <div class="bg"></div>
     <div class="card buttonlike" onclick="letterIn()">
-        <span>Version 1</span>
+        <span>Notes</span>
     </div>
     <div class="opened">
         <div class="memo">
-            <span class="title">Notes for V 1.</span>
+            <span class="title">Update Note</span>
             <div class="lines">
-                <span>
-                    Memes
-                </span>
+                <?php include 'phplets/content.php' ?>
             </div>
         </div>
         <a class="alt-btn back"><img src="assets/back.png"></a>
