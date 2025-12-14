@@ -1,3 +1,7 @@
+# This is a fork of Onliine!
+This fork is intended for use making meme videos. All modifications were done by LordGrass,
+in addition I have left the original code in its own branch.
+
 # Welcome to Onliine!
 The website that simulates the Wii System to perfection (almost).
 ![Project Logo](https://raw.githubusercontent.com/jerosajose/onliine/main/assets/logotype.png)
