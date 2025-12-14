@@ -38,4 +38,3 @@ if ($result = $conn->query($sql)) {
 // Close connection
 $conn->close();
 ?>
-

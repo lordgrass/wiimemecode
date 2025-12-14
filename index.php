@@ -109,7 +109,7 @@
         <div class="memo">
             <span class="title">Update 0.11</span>
             <div class="lines">
-                <?php include 'phplets/content.php' ?>
+                <?php include 'phplets/update-notes.php' ?>
             </div>
         </div>
         <a class="alt-btn back"><img src="assets/back.png"></a>
