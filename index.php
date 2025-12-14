@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meme Menu V. 1</title>
+    <title>Meme Menu V. 0.11</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
     <script src="js/jquery.js"></script>
@@ -15,7 +15,7 @@
 	<link rel="apple-touch-icon" href="" />
 	<meta name="author" content="Enadasa (Modifications only)" />
     <meta name="description" content="Official Website of Enadasa">
-	<meta name="keywords" content="Enadasa,Lordgrass,Youtuber" />
+	<meta name="keywords" content="Enadasa,Youtuber" />
 </head>
 <body>
     <div  class="main-menu">
@@ -27,14 +27,15 @@
 
         <div class="grid">
             <div class="ch-c">
-                <div class="ch occupied" data-id="senate">
+                <div class="ch occupied" data-id="senate" data-href="https://youtu.be/Flr54XPBACY">
                     <iframe src=""></iframe>
                     <div class="onhover" onmouseover="hover()" onclick="zip()"></div>
                     <span class="tag">Senate Channel</span></div>
                 <div class="ch occupied" data-id="skin-repo" data-href="skin-repo/index.html">
                     <iframe src=""></iframe>
                     <div class="onhover" onmouseover="hover()" onclick="zip()"></div>
-                    <span class="tag">Face Channel</span></div>
+                    <span class="tag">Face Channel</span>
+                </div>
                 <div class="ch blank"></div>
                 <div class="ch blank"></div>
                 <div class="ch blank"></div>
@@ -67,7 +68,7 @@
         </div>
         <div class="bottom-bar">
             <div class="lateral left">
-                <img src="assets/wii-button.png" class="wii-btn buttonlike" />
+                <img src="assets/reload.png" class="wii-btn buttonlike" onclick="location.reload()" />
                 <span class="tag">Reload Page</span>
             </div>
             <div class="info" style="color: red;">
@@ -102,11 +103,11 @@
 
     <div class="bg"></div>
     <div class="card buttonlike" onclick="letterIn()">
-        <span>Notes</span>
+        <span>Update Notes</span>
     </div>
     <div class="opened">
         <div class="memo">
-            <span class="title">Update Note</span>
+            <span class="title">Update 0.11</span>
             <div class="lines">
                 <?php include 'phplets/content.php' ?>
             </div>
@@ -116,18 +117,18 @@
     <div class="bottom">
         <span id="date2"></span>
         <div class="lateral">
-            <img src="assets/wii-button.png" class="back-btn backtowiimenu buttonlike" />
+            <img src="assets/reload.png" class="back-btn backtowiimenu buttonlike" />
             <span class="tag">Menu</span>
         </div>
 
 <div class="ui-sfx">
-    <audio id="hover" src="audio/button-hover.mp3"></audio>
-    <audio id="select" src="audio/button-select.mp3"></audio>
-    <audio id="zip" src="audio/zip.mp3"></audio>
-    <audio id="back" src="audio/back.mp3"></audio>
-    <audio id="start" src="audio/start.mp3"></audio>
-    <audio id="nextprev" src="audio/nextprev.mp3"></audio>
-    <audio id="letterIn" src="audio/letter-in.mp3"></audio>
+    <audio id="hover" src="assets/audio/button-hover.mp3"></audio>
+    <audio id="select" src="assets/audio/button-select.mp3"></audio>
+    <audio id="zip" src="assets/audio/zip.mp3"></audio>
+    <audio id="back" src="assets/audio/back.mp3"></audio>
+    <audio id="start" src="assets/audio/start.mp3"></audio>
+    <audio id="nextprev" src="assets/audio/nextprev.mp3"></audio>
+    <audio id="letterIn" src="assets/audio/letter-in.mp3"></audio>
     <audio id="chSpec" src=""></audio>
 </div>
 
@@ -135,7 +136,7 @@
     // CHANNEL ART LOAD
     $(document).ready(function() {
         $('.ch.occupied').each(function() {
-            var artsrc = 'channelart/' + $(this).data('id') + '/channel.html';
+            var artsrc = 'assets/' + $(this).data('id') + '/channel.html';
             $(this).find('iframe').attr('src', artsrc);
         });
     });
@@ -152,10 +153,10 @@
     $(document).on("click", ".occupied", function() {
         console.log($(this).data('id'));
 
-        var audiosrc = 'assets/channels/' + $(this).data('id') + '/audio.mp3';
+        var audiosrc = 'assets/' + $(this).data('id') + '/audio.mp3';
         $("#chSpec").attr('src', audiosrc);
 
-        var videosrc = 'assets/channels/' + $(this).data('id') + '/video.gif';
+        var videosrc = 'assets/' + $(this).data('id') + '/video.gif';
         $("#videoSpec").attr('src', videosrc);
 
         $("#chSpec")[0].currentTime = 0;
