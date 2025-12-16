@@ -3,10 +3,11 @@
     --blue: #3bb7ff;
 }
 .Navigation {
-    transform: scale(55%);
+    transform: scale(50%);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
+    width: 820px;
 }
 .Navigation .prev {
     float: inline-start;

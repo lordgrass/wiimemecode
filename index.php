@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meme Menu V. 0.11</title>
+    <title>Meme Menu V. 0.12</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
     <script src="js/jquery.js"></script>
     <meta property="og:site_name" content="The Meme Menu" />
 	<meta property="og:type" content="Website" />
-	<meta property="og:title" content="LordGrass.com" />
-	<meta property="og:description" content="Official Website of Enadasa" />
-	<meta id="meta-image" property="og:image" itemprop="image" content="assets/favicon.png" />
-	<link rel="apple-touch-icon" href="" />
+	<meta property="og:title" content="The Meme Menu" />
 	<meta name="author" content="Enadasa (Modifications only)" />
-    <meta name="description" content="Official Website of Enadasa">
+    <meta name="description" content="Official Meme Website of Enadasa">
 	<meta name="keywords" content="Enadasa,Youtuber" />
 </head>
 <body>
-    <div  class="main-menu">
+    <div class="splash">
+        <img src="assets/splash.png"></img>
+    </div>
+    <div class="main-menu">
 
     <div class="linkbar">
         <a href="https://www.thefictioncabal.ch">Homepage</a>
