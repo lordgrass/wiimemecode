@@ -103,11 +103,11 @@
 
     <div class="bg"></div>
     <div class="card buttonlike" onclick="letterIn()">
-        <span>Update Notes</span>
+        <span>Update 0.12</span>
     </div>
     <div class="opened">
         <div class="memo">
-            <span class="title">Update 0.11</span>
+            <span class="title">Update 0.12</span>
             <div class="lines">
                 <?php include 'phplets/update-notes.php' ?>
             </div>
